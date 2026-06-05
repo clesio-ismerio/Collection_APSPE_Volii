@@ -1,14 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <settings>
   <run_mode>eigenvalue</run_mode>
-  <particles>20000</particles>
+  <particles>50000</particles>
   <batches>120</batches>
   <inactive>30</inactive>
+  <max_lost_particles>1</max_lost_particles>
+  <rel_max_lost_particles>1e-12</rel_max_lost_particles>
   <source type="independent" strength="1.0" particle="neutron">
-    <space type="cylindrical" origin="0.0 0.0 0.0">
-      <r type="uniform" parameters="0.0 45.0"/>
-      <phi type="uniform" parameters="0.0 6.283185307179586"/>
-      <z type="uniform" parameters="-50.0 50.0"/>
+    <space type="box">
+      <parameters>-3.0 -3.0 -20.0 3.0 3.0 20.0</parameters>
     </space>
   </source>
+  <output>
+    <tallies>true</tallies>
+  </output>
+  <temperature_method>interpolation</temperature_method>
+  <temperature_range>250.0 3000.0</temperature_range>
 </settings>

@@ -1,9 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <geometry>
-  <cell id="16" name="Fuel" material="11" region="-11 13 -14" universe="6"/>
-  <cell id="17" name="Reflector" material="12" region="11 -12 13 -14" universe="6"/>
-  <surface id="11" type="z-cylinder" coeffs="0.0 0.0 45.0"/>
-  <surface id="12" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 65.0"/>
-  <surface id="13" type="z-plane" boundary="vacuum" coeffs="-50.0"/>
-  <surface id="14" type="z-plane" boundary="vacuum" coeffs="50.0"/>
+  <cell id="1" material="8" region="-21 -19 20" universe="1"/>
+  <cell id="2" material="7" region="21 -19 20" universe="1"/>
+  <cell id="3" name="Core" fill="2" region="-31 -32 33" universe="3"/>
+  <cell id="4" name="Beryllium_Reflector" material="9" region="31 -35 -32 33" universe="3"/>
+  <hex_lattice id="2" name="Rover_Core_Lattice" n_rings="7">
+    <pitch>1.2</pitch>
+    <outer>1</outer>
+    <center>0.0 0.0</center>
+    <universes>
+      1
+     1 1
+    1 1 1
+   1 1 1 1
+  1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+1 1 1 1 1 1 1
+ 1 1 1 1 1 1
+  1 1 1 1 1
+   1 1 1 1
+    1 1 1
+     1 1
+      1</universes>
+  </hex_lattice>
+  <surface id="19" type="z-plane" boundary="vacuum" coeffs="50.0"/>
+  <surface id="20" type="z-plane" boundary="vacuum" coeffs="-50.0"/>
+  <surface id="21" type="z-cylinder" coeffs="0.0 0.0 0.35"/>
+  <surface id="31" type="z-cylinder" coeffs="0.0 0.0 50.0"/>
+  <surface id="32" type="z-plane" boundary="vacuum" coeffs="50.0"/>
+  <surface id="33" type="z-plane" boundary="vacuum" coeffs="-50.0"/>
+  <surface id="35" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 65.0"/>
 </geometry>

@@ -1,16 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <materials>
-  <material id="11" name="UO2 Fuel" depletable="true">
+  <material id="7" name="UC_Equivalent_Fuel" depletable="true" temperature="2500.0">
     <density value="10.5" units="g/cm3"/>
-    <nuclide name="U235" ao="0.1975"/>
-    <nuclide name="U238" ao="0.8025"/>
-    <nuclide name="O16" ao="1.9952412"/>
-    <nuclide name="O17" ao="0.000758"/>
-    <nuclide name="O18" ao="0.0040008"/>
-  </material>
-  <material id="12" name="Graphite Reflector">
-    <density value="1.8" units="g/cm3"/>
+    <nuclide name="U235" ao="0.04"/>
+    <nuclide name="U238" ao="0.96"/>
     <nuclide name="C12" ao="0.988922"/>
     <nuclide name="C13" ao="0.011078"/>
+  </material>
+  <material id="8" name="Hydrogen">
+    <density value="0.005" units="g/cm3"/>
+    <nuclide name="H1" ao="0.99984426"/>
+    <nuclide name="H2" ao="0.00015574"/>
+  </material>
+  <material id="9" name="Beryllium">
+    <density value="1.85" units="g/cm3"/>
+    <nuclide name="Be9" ao="1.0"/>
   </material>
 </materials>

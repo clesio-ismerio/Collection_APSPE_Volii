@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plots>
-  <plot id="6" filename="geometry" color_by="material" type="slice" basis="xy">
-    <pixels>800 800</pixels>
+  <plot id="4" filename="debug_cells" color_by="cell" type="slice" basis="xy">
+    <pixels>2000 2000</pixels>
     <origin>0.0 0.0 0.0</origin>
-    <width>130.0 130.0</width>
+    <width>2.5 2.5</width>
   </plot>
 </plots>
