@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>20000</particles>
+  <batches>120</batches>
+  <inactive>30</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="cylindrical" origin="0.0 0.0 0.0">
+      <r type="uniform" parameters="0.0 45.0"/>
+      <phi type="uniform" parameters="0.0 6.283185307179586"/>
+      <z type="uniform" parameters="-50.0 50.0"/>
+    </space>
+  </source>
+</settings>

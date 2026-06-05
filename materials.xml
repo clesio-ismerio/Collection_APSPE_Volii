@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="11" name="UO2 Fuel" depletable="true">
+    <density value="10.5" units="g/cm3"/>
+    <nuclide name="U235" ao="0.1975"/>
+    <nuclide name="U238" ao="0.8025"/>
+    <nuclide name="O16" ao="1.9952412"/>
+    <nuclide name="O17" ao="0.000758"/>
+    <nuclide name="O18" ao="0.0040008"/>
+  </material>
+  <material id="12" name="Graphite Reflector">
+    <density value="1.8" units="g/cm3"/>
+    <nuclide name="C12" ao="0.988922"/>
+    <nuclide name="C13" ao="0.011078"/>
+  </material>
+</materials>
